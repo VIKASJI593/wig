@@ -1,0 +1,378 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\VIKAS\Desktop\wig> GIT STATUS
+PS C:\Users\VIKAS\Desktop\wig> git status
+On branch master
+
+No commits yet
+
+ck)
+PS C:\Users\VIKAS\Desktop\wig> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\VIKAS\Desktop\wig> git add sum.java
+PS C:\Users\VIKAS\Desktop\wig> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sum.java
+
+PS C:\Users\VIKAS\Desktop\wig> git commit -m "initial commit"
+ 1 file changed, 9 insertions(+)
+ create mode 100644 sum.java
+PS C:\Users\VIKAS\Desktop\wig> git log
+commit a3da3b3345d2a97fc112bfd5e4f0b0d2f172ac85 (HEAD -> master)
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 16:49:05 2022 +0530
+
+    initial commit
+PS C:\Users\VIKAS\Desktop\wig> git status
+On branch master
+  (use "git restore <file>..." to discard changes in working 
+directory)
+        modified:   sum.java
+no changes added to commit (use "git add" and/or "git commit 
+-a")
+PS C:\Users\VIKAS\Desktop\wig> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed) 
+  (use "git restore <file>..." to discard changes in working 
+directory)
+        modified:   sum.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committ        diff.java
+
+no changes added to commit (use "git add" and/or "git commit 
+-a")
+PS C:\Users\VIKAS\Desktop\wig> git add diff.java
+PS C:\Users\VIKAS\Desktop\wig> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed) 
+  (use "git restore <file>..." to discard changes in working 
+PS C:\Users\VIKAS\Desktop\wig> git commit -m "adding diff.java"
+ 1 file changed, 3 insertions(+)
+ create mode 100644 diff.java
+PS C:\Users\VIKAS\Desktop\wig> git log
+commit 049cd0011248f3ae490ee7e2bee13fd836b613bf (HEAD -> master)
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 16:58:38 2022 +0530
+
+    adding diff.java
+
+commit a3da3b3345d2a97fc112bfd5e4f0b0d2f172ac85
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 16:49:05 2022 +0530
+
+    initial commit
+PS C:\Users\VIKAS\Desktop\wig> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed) 
+directory)
+        modified:   sum.java
+
+no changes added to commit (use "git add" and/or "git commit 
+-a")
+PS C:\Users\VIKAS\Desktop\wig> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\VIKAS\Desktop\wig> git add .
+PS C:\Users\VIKAS\Desktop\wig> git commit -m "added message in some.java"
+[master 51e5a42] added message in some.java
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\VIKAS\Desktop\wig> git log
+commit 51e5a42a9c0622d82ebc91bc87abaa22d9442e0d (HEAD -> master)
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 17:02:48 2022 +0530
+
+    added message in some.java
+
+commit 049cd0011248f3ae490ee7e2bee13fd836b613bf
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+
+    adding diff.java
+
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 16:49:05 2022 +0530
+
+    initial commit
+PS C:\Users\VIKAS\Desktop\wig> git checkout a3da3b3345d2a97fc112bfd5e4f0b0d2f172ac85
+Note: switching to 'a3da3b3345d2a97fc112bfd5e4f0b0d2f172ac85'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you 
+make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+
+Turn off this advice by setting config variable advice.detach
+
+HEAD is now at a3da3b3 initial commit
+PS C:\Users\VIKAS\Desktop\wig> git checkout master
+Previous HEAD position was a3da3b3 initial commit
+Switched to branch 'master'
+c112bfd5e4f0b0d2f172ac85
+Note: switching to 'a3da3b3345d2a97fc112bfd5e4f0b0d2f172ac85'
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you 
+make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+edHead to false
+
+PS C:\Users\VIKAS\Desktop\wig> git branch
+  master
+PS C:\Users\VIKAS\Desktop\wig> git log
+Date:   Sat Oct 15 16:49:05 2022 +0530
+    initial commit
+PS C:\Users\VIKAS\Desktop\wig> git checkout master
+Previous HEAD position was a3da3b3 initial commit
+Switched to branch 'master'
+PS C:\Users\VIKAS\Desktop\wig> git log
+commit 51e5a42a9c0622d82ebc91bc87abaa22d9442e0d (HEAD -> master)
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+
+commit 049cd0011248f3ae490ee7e2bee13fd836b613bf
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+
+
+commit a3da3b3345d2a97fc112bfd5e4f0b0d2f172ac85
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 16:49:05 2022 +0530
+
+PS C:\Users\VIKAS\Desktop\wig> git branch dev
+PS C:\Users\VIKAS\Desktop\wig> git branch
+  dev
+* master
+PS C:\Users\VIKAS\Desktop\wig> git checkout dev
+Switched to branch 'dev'
+PS C:\Users\VIKAS\Desktop\wig> git branch
+* dev
+  master
+PS C:\Users\VIKAS\Desktop\wig> git checkout -b vikas/multiply
+
+Switched to a new branch 'vikas/multiply'
+PS C:\Users\VIKAS\Desktop\wig> git status
+On branch vikas/multiply
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        multiply.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\VIKAS\Desktop\wig> git add multiply.java
+PS C:\Users\VIKAS\Desktop\wig> git commit -m "added multiply.java"
+ 1 file changed, 9 insertions(+)
+PS C:\Users\VIKAS\Desktop\wig> git checkout dev
+Switched to branch 'dev'
+PS C:\Users\VIKAS\Desktop\wig> git merge vikas/multiply      
+Updating 51e5a42..c48e31a
+Fast-forward
+ multiply.java | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ create mode 100644 multiply.java
+PS C:\Users\VIKAS\Desktop\wig> git log
+commit c48e31a1d058af8cfd9f6222365ff67cd15c2f94 (HEAD -> dev, vikas/multiply)
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 17:21:42 2022 +0530
+
+    added multiply.java
+
+commit 51e5a42a9c0622d82ebc91bc87abaa22d9442e0d (master)     
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+
+    added message in some.java
+
+commit 049cd0011248f3ae490ee7e2bee13fd836b613bf
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+
+    adding diff.java
+
+commit a3da3b3345d2a97fc112bfd5e4f0b0d2f172ac85
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 16:49:05 2022 +0530
+
+    initial commit
+PS C:\Users\VIKAS\Desktop\wig> git checkout master
+Switched to branch 'master'
+PS C:\Users\VIKAS\Desktop\wig> git log
+commit 51e5a42a9c0622d82ebc91bc87abaa22d9442e0d (HEAD -> master)
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 17:02:48 2022 +0530
+
+    added message in some.java
+
+commit 049cd0011248f3ae490ee7e2bee13fd836b613bf
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 16:58:38 2022 +0530
+
+    adding diff.java
+
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 16:49:05 2022 +0530
+
+    initial commit
+PS C:\Users\VIKAS\Desktop\wig> git merge dev
+Updating 51e5a42..c48e31a
+Fast-forward
+ multiply.java | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+ create mode 100644 multiply.java
+PS C:\Users\VIKAS\Desktop\wig> git log
+commit c48e31a1d058af8cfd9f6222365ff67cd15c2f94 (HEAD -> mastAuthor: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 17:21:42 2022 +0530
+
+    added multiply.java
+
+commit 51e5a42a9c0622d82ebc91bc87abaa22d9442e0d
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 17:02:48 2022 +0530
+
+    added message in some.java
+
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 16:58:38 2022 +0530
+
+    adding diff.java
+
+commit a3da3b3345d2a97fc112bfd5e4f0b0d2f172ac85
+Author: VIKAS KUMAR <kumar.vikas593@gmail.com>
+Date:   Sat Oct 15 16:49:05 2022 +0530
+
+    initial commit
+PS C:\Users\VIKAS\Desktop\wig> touch.gitignore
+recognized as the name of a cmdlet, function, script file,   
+or operable program. Check the spelling of the name, or if   
+a path was included, verify that the path is correct and     
+try again.
+At line:1 char:1
++ touch.gitignore
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (touch.gitign  
+   ore:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException       
+ 
+touch : The term 'touch' is not recognized as the name of a  
+cmdlet, function, script file, or operable program. Check    
+the spelling of the name, or if a path was included, verify  
+that the path is correct and try again.
+At line:1 char:1
++ touch .gitignore
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (touch:String  
+   ) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException       
+ 
+touch : The term 'touch' is not recognized as the name of a  
+cmdlet, function, script file, or operable program. Check    
+the spelling of the name, or if a path was included, verify  
+that the path is correct and try again.
+At line:1 char:1
++ touch .gitignore
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (touch:String  
+   ) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException       
+ 
+touch : The term 'touch' is not recognized as the name of a  
+cmdlet, function, script file, or operable program. Check    
+the spelling of the name, or if a path was included, verify  
+that the path is correct and try again.
+At line:1 char:1
++ touch .gitignore
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (touch:String  
+   ) [], CommandNotFoundException
+ 
+PS C:\Users\VIKAS\Desktop\wig> .gitignore
+.gitignore : The term '.gitignore' is not recognized as the  
+name of a cmdlet, function, script file, or operable         
+program. Check the spelling of the name, or if a path was    
+included, verify that the path is correct and try again.     
+At line:1 char:1
++ .gitignore
+    + CategoryInfo          : ObjectNotFound: (.gitignore:S  
+   tring) [], CommandNotFoundException
+ 
+cmdlet, function, script file, or operable program. Check    
+the spelling of the name, or if a path was included, verify  
++ touch .gitignore
++ ~~~~~
+    + CategoryInfo          : ObjectNotFound: (touch:String  
+   ) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException       
+PS C:\Users\VIKAS\Desktop\wig> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        secret key.text
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\VIKAS\Desktop\wig> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\VIKAS\Desktop\wig> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\VIKAS\Desktop\wig> git remote -v
+PS C:\Users\VIKAS\Desktop\wig> git remote add origin git@github.com:VIKASJI593/wig.git
+PS C:\Users\VIKAS\Desktop\wig>  git remote -v
+origin  git@github.com:VIKASJI593/wig.git (fetch)
+origin  git@github.com:VIKASJI593/wig.git (push)
+PS C:\Users\VIKAS\Desktop\wig> git branch -M main
+PS C:\Users\VIKAS\Desktop\wig> git push -u origin main       
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\VIKAS\Desktop\wig> git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.   
+
+PS C:\Users\VIKAS\Desktop\wig> 
