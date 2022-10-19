@@ -376,3 +376,9 @@ To have this happen automatically for branches without a tracking
 upstream, see 'push.autoSetupRemote' in 'git help config'.   
 
 PS C:\Users\VIKAS\Desktop\wig> 
+
+
+
+
+On branch main
+nothing to commit, working tree clean
